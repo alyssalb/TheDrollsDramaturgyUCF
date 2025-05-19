@@ -167,6 +167,24 @@ main.container {
   color: #b7e0c4;
 }
 
+.header-content nav a.current {
+  color: #b7e0c4;
+  position: relative;
+  font-weight: 600;
+}
+
+.header-content nav a.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #b7e0c4;
+  box-shadow: 0 0 6px #b7e0c4, 0 0 12px #b7e0c4;
+  transition: all 0.3s ease;
+}
+
 #search-bar {
   width: 100%;
   padding: 0.5rem 1rem;
