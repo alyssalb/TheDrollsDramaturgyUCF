@@ -157,39 +157,39 @@ ul li a:hover {
 }
 
 #glossary {
+  display: table;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  min-height: 200px;
   background-color: #fdfaf5;
-  display: block;
-  padding: 1px; /* forces layout without collapsing */
+  table-layout: fixed;
 }
+
 
 .glossary-entry {
   width: 100%;
-  display: block;
+  display: table-row;
 }
 
 .definition {
   width: 100%;
-  display: block;
+  display: table-cell;
   box-sizing: border-box;
   word-break: break-word;
   overflow-wrap: anywhere;
+  vertical-align: top;
   color: #4b2e1e;
 }
 
 .term {
-  font-weight: bold;
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+  display: table-cell;
+  width: 100%;
+  box-sizing: border-box;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  vertical-align: top;
   color: #2d4739;
-  transition: color 0.3s ease;
-  pointer-events: auto;
-  z-index: 2;
+
 }
 
 .term:hover {
@@ -237,6 +237,24 @@ ul li a:hover {
 
   header.slim-header h1 {
     font-size: 1.25rem;
+  }
+
+  #glossary {
+    display: block;
+  }
+
+  .glossary-entry {
+    display: block;
+  }
+
+  .term {
+    display: block;
+    width: 100%;
+  }
+
+  .definition {
+    display: block;
+    width: 100%;
   }
 }
 
