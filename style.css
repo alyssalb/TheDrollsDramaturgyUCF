@@ -1,32 +1,150 @@
-
-body {
-  font-family: 'Helvetica Neue', sans-serif;
+/* Global reset and base styling */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #f8f8f8;
-  color: #333;
 }
 
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdfaf5;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+/* Container styling for centered layout */
 .container {
   max-width: 800px;
   margin: 2rem auto;
-  padding: 1rem;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
 }
 
+/* Navigation bar */
 nav {
-  background: #444;
-  color: #fff;
-  padding: 0.5rem 1rem;
+  background-color: #2d4739;
+  padding: 0.75rem 1.5rem;
 }
 
 nav a {
-  color: #fff;
-  margin-right: 1rem;
+  color: #f2f2f2;
   text-decoration: none;
+  margin-right: 1rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b7e0c4;
+}
+
+/* Header styling */
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  color: #2d4739;
+  margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.25rem;
+  border-bottom: 2px solid #b7e0c4;
+  padding-bottom: 0.25rem;
 }
+
+h2 {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+p {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.75rem;
+}
+
+ul li a {
+  color: #2d4739;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px dashed #2d4739;
+  padding-bottom: 2px;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #4fa76f;
+  border-color: #4fa76f;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+#search-bar {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.glossary-entry {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+.term {
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #2d4739;
+  transition: color 0.3s ease;
+}
+
+.term:hover {
+  color: #4fa76f;
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+  font-family: monospace;
+}
+
+.definition {
+  margin
+
