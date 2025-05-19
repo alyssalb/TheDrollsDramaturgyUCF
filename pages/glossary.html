@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header" id="siteHeader">
+  <div class="header-content">
+    <h1>The Drolls Dramaturgy Packet</h1>
       <nav> 
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -23,6 +26,8 @@
           <li><a href="pages/packet-bibliography.html">Packet Bibliography</a></li>
         </ul>
       </nav>
+  </div>
+  </header>
 
   <main class="container">
     <h1>Glossary</h1>
@@ -298,6 +303,15 @@
       const termText = entry.querySelector('.term').textContent.toLowerCase();
       entry.style.display = termText.includes(query) ? 'block' : 'none';
     });
+  });
+
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
   });
 </script>
 </body>
