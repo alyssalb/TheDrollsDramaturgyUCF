@@ -264,12 +264,10 @@
     const definition = term.nextElementSibling;
     const icon = term.querySelector('.toggle-icon');
 
-    // Make sure everything starts closed
     definition.classList.remove('open');
     definition.style.display = 'none';
     icon.textContent = '+';
 
-    // Toggle logic
     term.addEventListener('click', () => {
       const isOpen = definition.classList.contains('open');
       definition.style.display = isOpen ? 'none' : 'block';
@@ -277,13 +275,11 @@
       definition.classList.toggle('open');
     });
 
-    // Keyboard accessibility
     term.addEventListener('keypress', (e) => {
       if (e.key === 'Enter') term.click();
     });
   });
 
-  // Search filter
   document.getElementById('search-bar').addEventListener('input', function () {
     const query = this.value.toLowerCase();
     document.querySelectorAll('.glossary-entry').forEach(entry => {
