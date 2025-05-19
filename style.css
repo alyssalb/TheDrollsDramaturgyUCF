@@ -112,6 +112,11 @@ html, body {
     display: block;
     margin-bottom: 0.5rem;
   }
+
+  .site-header h1 {
+    font-size: 1.75rem;
+    padding: 1rem 0.75rem 0.5rem;
+  }
 }
 
 .site-header {
@@ -135,6 +140,7 @@ html, body {
   padding: 1.5rem 1rem 0.5rem;
   text-align: center;
   margin: 0;
+  line-height: 1.2;
 }
 
 .site-header.shrink {
@@ -168,6 +174,8 @@ html, body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
 }
 
 .header-content nav li {
@@ -255,4 +263,40 @@ main.container {
 
 .definition {
   margin
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #4b2e1e;
+  display: none;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fdf4e3;
+    padding: 1rem;
+    border-top: 2px solid #4fa76f;
+  }
+}
+
 
