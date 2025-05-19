@@ -117,8 +117,8 @@ body, html {
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #fdf4e3;
-  color: #4b2e1e;
+  background-color: #4b2e1e;
+  color: #fdf4e3;
   transition: padding 0.3s ease, box-shadow 0.3s ease;
   padding: 2rem 1rem;
   text-align: center;
@@ -126,7 +126,12 @@ body, html {
 }
 
 .site-header h1 {
-  color: #4b2e1e;
+  color: #fdf4e3;
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  padding: 1.5rem 1rem 0.5rem;
+  text-align: center;
+  margin: 0;
 }
 
 .site-header.shrink {
@@ -142,14 +147,21 @@ body, html {
   transition: font-size 0.3s ease;
 }
 
-.site-header.shrink .header-content h1 {
+.site-header.shrink h1 {
   font-size: 1.5rem;
+  padding: 0.75rem 1rem 0.25rem;
 }
 
 main.container {
   margin-top: 8rem;
   padding: 1rem;
   min-height: calc(100vh - 10rem);
+}
+
+.header-content nav {
+  background-color: #fdf4e3;
+  padding: 0.75rem 1rem;
+  text-align: center;
 }
 
 .header-content nav ul {
