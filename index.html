@@ -12,7 +12,7 @@
       <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
   </header>
   
-  <nav class="simple-nav">
+  <nav class="simple-nav" id="navMenu">
       <a href="index.html">Home</a>
       <a href="/TheDrollsDramaturgyUCF/pages/dramaturgs-note.html">Dramaturg's Note</a>
       <a href="/TheDrollsDramaturgyUCF/pages/table-of-contents.html">Table of Contents</a>
@@ -32,11 +32,19 @@
     <p>This is the home page for our dramaturigcal packet. Navigate using the links above to explore contextual materials and thematic elements that support and enrich our production of <i>The Drolls</i>!</p>
   </main>
  
-  <script>
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.getElementById('navMenu').classList.toggle('active');
-    });
-  </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (toggleButton && navMenu) {
+      toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    }
+  });
+</script>
+
 
 </body>
 </html>
