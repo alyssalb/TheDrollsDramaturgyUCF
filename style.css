@@ -61,6 +61,12 @@ nav.simple-nav {
   display: none;
   flex-direction: column;
   padding: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav.simple-nav.active {
