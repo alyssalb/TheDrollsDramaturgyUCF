@@ -154,16 +154,6 @@ html, body {
   padding: 0.75rem 1rem 0.25rem;
 }
 
-main.container {
-  margin-top: 20rem;
-  padding: 1.5rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: calc(6rem + 4rem);
-  flex: 1;
-}
-
 .header-content nav {
   background-color: #fdf4e3;
   padding: 0.75rem 1rem;
@@ -212,6 +202,17 @@ main.container {
   box-shadow: 0 0 6px #b7e0c4, 0 0 12px #b7e0c4;
   transition: all 0.3s ease;
 }
+
+main.container {
+  /* ensure content doesn’t hide behind the fixed header */
+  margin-top: 12rem; /* adjust if header gets taller or shorter */
+  padding: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1; /* works with flexbox layout for sticky footer */
+}
+
 
 #search-bar {
   width: 100%;
