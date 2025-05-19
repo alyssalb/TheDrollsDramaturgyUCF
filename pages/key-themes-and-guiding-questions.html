@@ -7,28 +7,25 @@
   <link rel="stylesheet" href="/TheDrollsDramaturgyUCF/style.css" />
 </head>
 <body>
-  <header class="site-header" id="siteHeader">
-    <div class="header-content">
+  <header class="slim-header">
       <h1>The Drolls Dramaturgy Packet</h1>
       <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="/TheDrollsDramaturgyUCF/index.html">Home</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/dramaturgs-note.html">Dramaturg's Note</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/table-of-contents.html">Table of Contents</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/about-the-playwright.html">About the Playwright</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/introduction-to-drolls.html">Introduction to Drolls</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/historical-context-puritan-rule-and-artistic-suppression.html">Historical Context: Puritan Rule and Artistic Suppression</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/a-map-of-the-play.html">A Map of the Play</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/the-music-of-the-drolls.html">The Music of The Drolls</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/shakespeares-plays-in-the-drolls.html">Shakespeare's Plays in The Drolls</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/glossary.html">Glossary</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/key-themes-and-guiding-questions.html" class="current">Key Themes and Guiding Questions</a></li>
-          <li><a href="/TheDrollsDramaturgyUCF/pages/packet-bibliography.html">Packet Bibliography</a></li>
-        </ul>
-      </nav>
-    </div>
   </header>
+  
+  <nav class="simple-nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/dramaturgs-note.html">Dramaturg's Note</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/table-of-contents.html">Table of Contents</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/about-the-playwright.html">About the Playwright</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/introduction-to-drolls.html">Introduction to Drolls</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/historical-context-puritan-rule-and-artistic-suppression.html">Historical Context: Puritan Rule and Artistic Suppression</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/a-map-of-the-play.html">A Map of the Play</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/the-music-of-the-drolls.html">The Music of The Drolls</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/shakespeares-plays-in-the-drolls.html">Shakespeare's Plays in The Drolls</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/glossary.html">Glossary</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/key-themes-and-guiding-questions.html">Key Themes and Guiding Questions</a>
+      <a href="/TheDrollsDramaturgyUCF/pages/packet-bibliography.html">Packet Bibliography</a>
+      </nav>
 
   <main class="container">
     <h1>Key Themes and Guiding Questions</h1>
@@ -40,23 +37,18 @@
         <li><b>Reflection Prompts:</b> How would you adapt a scene from your favorite play or movie into a 5-10 minute street/found space sketch a-la Drolls? Have you ever done guerrilla or found-space theater? Improv? What does that feel like as a performer versus structured plays and performances?</li>
       </ul>
   </main>
-  <script>
-  const header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('shrink');
-    } else {
-      header.classList.remove('shrink');
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (toggleButton && navMenu) {
+      toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
     }
   });
-
-      const toggleButton = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.main-nav');
-
-  toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
 </script>
-
 </body>
 </html>
