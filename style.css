@@ -45,6 +45,15 @@ header.slim-header h1 {
   color: #fdf4e3;
 }
 
+header.slim-header h1 a {
+  color: #fdf4e3; /* tan, like before */
+  text-decoration: none;
+}
+
+header.slim-header h1 a:hover {
+  text-decoration: underline;
+}
+
 .menu-toggle {
   font-size: 1.75rem;
   color: #b7e0c4; /* soft green */
