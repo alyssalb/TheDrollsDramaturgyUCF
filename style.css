@@ -205,7 +205,7 @@ html, body {
 
 main.container {
   /* ensure content doesn’t hide behind the fixed header */
-  margin-top: 12rem; /* adjust if header gets taller or shorter */
+  margin-top: 20rem; /* adjust if header gets taller or shorter */
   padding: 1.5rem;
   max-width: 800px;
   margin-left: auto;
