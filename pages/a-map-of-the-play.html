@@ -33,6 +33,7 @@
     <h1>A Map of the Play</h1>
       <p>Visit this <a href="https://earth.google.com/earth/d/1JBegdfei_O_tPSULo9kfgXvBPvylYvFF?usp=sharing" target="_blank" rel="noopener noreferrer">interactive map</a> of the locations mentioned and visited in <i>The Drolls</i>. Click through the slideshow to learn about some of the locations and their history, or zoom out to see where they were in relation to one another.</p>
   </main>
+  
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.querySelector('.menu-toggle');
@@ -41,6 +42,12 @@
     if (toggleButton && navMenu) {
       toggleButton.addEventListener('click', () => {
         navMenu.classList.toggle('active');
+      });
+
+      navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('active');
+        });
       });
     }
   });
