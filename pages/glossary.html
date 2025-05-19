@@ -41,7 +41,7 @@
             <span class="toggle-icon">+</span>
             Droll
           </div>
-          <div class="definition">"One <a href="https://johnsonsdictionaryonline.com/views/search.php?term=droll" target="_blank" rel="noopener noreferrer">whose business is to raise mirth by petty tricks; a jester; a buffoon" and "a farce; something exhibited to raise mirth"</a>; largely associated with the drolls of the Interregnum in England, acts of guerrilla and underground theatre and performance that kept entertainment alive in a time of extreme artistic suppression. The Drolls were extremely bawdy and crass acts put on spur of the moment by small troupes of actors with little to no set or costumes and very minimal props. Acts were short, often abridged or adapted from previous existing material, folk tales and pastorals, or improvised on the spot by actors.</div>
+          <div class="definition">From the <a href="https://johnsonsdictionaryonline.com/views/search.php?term=droll" target="_blank" rel="noopener noreferrer">Samuel Johnson Dictionary:</a> "One whose business is to raise mirth by petty tricks; a jester; a buffoon" and "a farce; something exhibited to raise mirth"; largely associated with the drolls of the Interregnum in England, acts of guerrilla and underground theatre and performance that kept entertainment alive in a time of extreme artistic suppression. The Drolls were extremely bawdy and crass acts put on spur of the moment by small troupes of actors with little to no set or costumes and very minimal props. Acts were short, often abridged or adapted from previous existing material, folk tales and pastorals, or improvised on the spot by actors.</div>
         </div>
 
         <div class="glossary-entry">
@@ -81,7 +81,7 @@
             <span class="toggle-icon">+</span>
             Magistrate
           </div>
-          <div class="definition"><a href="https://johnsonsdictionaryonline.com/views/search.php?term=magistrate" target="_blank" rel="noopener noreferrer">"A man publicly invested with authority; a governor; an executor of the laws."</div>
+          <div class="definition">From the <a href="https://johnsonsdictionaryonline.com/views/search.php?term=magistrate" target="_blank" rel="noopener noreferrer">Samuel Johnson Dictionary: </a> "A man publicly invested with authority; a governor; an executor of the laws."</div>
         </div>
                 
         <div class="glossary-entry">
@@ -105,7 +105,7 @@
             <span class="toggle-icon">+</span>
             Bumpkin (archaic)
           </div>
-          <div class="definition"><a href="https://johnsonsdictionaryonline.com/views/search.php?term=bumpkin" target="_blank" rel="noopener noreferrer">"An awkward heavy rustic; a country lout."</a> I encourage the reading of this full entry, it's quite funny.</div>
+          <div class="definition">From the <a href="https://johnsonsdictionaryonline.com/views/search.php?term=bumpkin" target="_blank" rel="noopener noreferrer">Samuel Johnson Dictionary: </a>"An awkward heavy rustic; a country lout." I encourage the reading of this full entry, it's quite funny.</div>
         </div>
                
         <div class="glossary-entry">
@@ -257,7 +257,7 @@
             <span class="toggle-icon">+</span>
             Annie Cobbie
           </div>
-          <div class="definition"><a href="https://www.futurelearn.com/info/courses/black-tudors/0/steps/224780" target="_blank" rel="noopener noreferrer">A real and well-known/popular sex worker during the Renaissance.</a> The "tawny moore with the soft skin", mentioned as such in historical recorda and in our play. "Anne was earning over four times as much as the other women" and "we can deduce that Anne Cobbie was a sought-after prostitute...[maybe] of North African heritage or possibly of mixed heritage."</div>
+          <div class="definition">A <a href="https://www.futurelearn.com/info/courses/black-tudors/0/steps/224780" target="_blank" rel="noopener noreferrer"> real and well-known/popular sex worker during the Renaissance.</a> The "tawny moore with the soft skin", mentioned as such in historical records and in our play. "Anne was earning over four times as much as the other women" and "we can deduce that Anne Cobbie was a sought-after prostitute...[maybe] of North African heritage or possibly of mixed heritage."</div>
         </div>
                 
         <div class="glossary-entry">
@@ -304,7 +304,7 @@
     document.getElementById('search-bar')?.addEventListener('input', function () {
       const query = this.value.toLowerCase();
       document.querySelectorAll('.glossary-entry').forEach(entry => {
-        const termText = entry.querySelector('.term').textContent.toLowerCase();
+        const termText = entry.querySelector('.term').innerText.toLowerCase();
         entry.style.display = termText.includes(query) ? 'block' : 'none';
       });
     });
