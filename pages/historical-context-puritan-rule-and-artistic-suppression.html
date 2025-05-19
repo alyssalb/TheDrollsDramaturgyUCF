@@ -34,7 +34,8 @@
     <h1>Historical Context: Puritan Rule and Artistic Suppression</h1>
       <p>View <a href="https://alyssalb.github.io/TheDrollsTimeline/" target="_blank" rel="noopener noreferrer">this timeline</a> for in-depth historical context.</p>
   </main
-    <script>
+    
+<script>
   const header = document.getElementById('siteHeader');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -43,14 +44,13 @@
       header.classList.remove('shrink');
     }
   });
-
-        const toggleButton = document.querySelector('.menu-toggle');
+  
+  const toggleButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');
 
   toggleButton.addEventListener('click', () => {
     nav.classList.toggle('active');
   });
 </script>
-
 </body>
 </html>
