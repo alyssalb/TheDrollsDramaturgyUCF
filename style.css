@@ -7,11 +7,13 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-color: #fdfaf5;
+  //background color: #fdfaf5;
+  background: pink;
   color: #2e2e2e;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
+  
 }
 
 /* Container styling for centered layout */
