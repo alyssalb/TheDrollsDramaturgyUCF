@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header" id="siteHeader">
+  <div class="header-content">
+    <h1>The Drolls Dramaturgy Packet</h1>
       <nav> 
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -23,6 +26,8 @@
           <li><a href="pages/packet-bibliography.html">Packet Bibliography</a></li>
         </ul>
       </nav>
+  </div>
+  </header>
 
   <main class="container">
     <h1>Dramaturg's Note</h1>
@@ -30,5 +35,16 @@
       <p>The hope is for these materials to help frame and deepen our understanding of the world that these characters, several based on real people, inhabited so that we might more richly present that world on stage. This context should aid us in bringing that humour, defiance, tenacity, and persistence characteristic of the time, place, and people in the play to life in our staged workshop production.</p>
       <p>This document is a starting place -- take what is useful and leave what is not. And above all, please contact me or catch me during/after rehearsal if you have questions or thoughts at any time during this process. I am happy to talk through things and do further research as we proceed through the production process. Contact me at any time at alyssa.barrack@ucf.edu.</p>
   </main>
+  <script>
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
+  });
+</script>
+
 </body>
 </html>
