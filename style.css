@@ -71,8 +71,12 @@ p {
 
 /* List styling */
 ul {
-  list-style: none;
   padding-left: 0;
+}
+
+li {
+  list-style-type: square;
+  margin-left: 1.5rem;
 }
 
 ul li {
@@ -233,10 +237,17 @@ main.container {
   font-family: 'Helvetica Neue', sans-serif;
 }
 
+#glossary {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .glossary-entry {
   margin-bottom: 1rem;
   border-bottom: 1px solid #ccc;
   padding-bottom: 0.5rem;
+  width: 100%;
 }
 
 .term {
@@ -277,6 +288,8 @@ main.container {
   pointer-events: auto;
   z-index: 1;
   margin-top: 0.5rem;
+  display: block;
+  width: 100%;
 }
 
 .menu-toggle {
