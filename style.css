@@ -172,24 +172,23 @@ ul li a:hover {
 }
 
 .definition {
+  display: none; /* will be toggled by JS */
   width: 100%;
-  display: table-cell;
+  padding: 0.5rem 0;
   box-sizing: border-box;
   word-break: break-word;
   overflow-wrap: anywhere;
-  vertical-align: top;
   color: #4b2e1e;
 }
 
 .term {
-  display: table-cell;
+  display: block;
   width: 100%;
-  box-sizing: border-box;
-  word-break: break-word;
-  overflow-wrap: anywhere;
-  vertical-align: top;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
   color: #2d4739;
-
+  margin-bottom: 0.25rem;
 }
 
 .term:hover {
