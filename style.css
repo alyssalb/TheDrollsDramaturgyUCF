@@ -10,6 +10,8 @@ body {
   background-color: #fdfaf5;
   color: #2e2e2e;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Container styling for centered layout */
@@ -90,7 +92,7 @@ ul li a:hover {
   border-color: #4fa76f;
 }
 
-body, html {
+html, body {
   min-height: 100vh;
 }
 
@@ -153,9 +155,13 @@ body, html {
 }
 
 main.container {
-  margin-top: 8rem;
-  padding: 1rem;
-  min-height: calc(100vh - 10rem);
+  margin-top: 13rem;
+  padding: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: calc(6rem + 4rem);
+  flex: 1;
 }
 
 .header-content nav {
