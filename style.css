@@ -61,11 +61,7 @@ nav.simple-nav {
   display: none;
   flex-direction: column;
   padding: 1rem;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 999;
+  margin-top: 4rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -83,6 +79,10 @@ nav.simple-nav a {
 
 nav.simple-nav a:hover {
   color: #4fa76f;
+}
+
+main.container {
+  margin-top: 8rem;
 }
 
 /* Typography */
