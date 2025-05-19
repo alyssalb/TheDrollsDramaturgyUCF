@@ -141,6 +141,9 @@ header.slim-header h1 {
       background: none;
       border: none;
       cursor: pointer;
+      display: block !important;
+      z-index: 1001;
+      position: relative;
     }
 
 nav.simple-nav {
